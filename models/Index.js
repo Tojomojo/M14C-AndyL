@@ -20,28 +20,28 @@ Post.belongsTo(User, {
 // Comment-User 
 Comment.belongsTo(User, {
     foreignKey: 'user_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
     hooks:true
 });
 
 // Comment-Post
 Comment.belongsTo(Post, {
     foreignKey: 'post_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
     hooks: true
 });
 
 // User-Comment 
 User.hasMany(Comment, {
     foreignKey: 'user_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
     hooks:true
 });
 
 // Post-Comment 
 Post.hasMany(Comment, {
     foreignKey: 'post_id',
-    onDelete: 'cascade',
+    onDelete: 'CASCADE',
     hooks:true
 })
 
