@@ -4,7 +4,7 @@
 // path modules
 const path = require('path');
 // dotenv file for sensitive configuration information
-require('dotenv').config();
+
 // Express.js server
 const express = require('express');
 // All routes as defined in the controllers folder
