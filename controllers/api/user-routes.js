@@ -146,8 +146,7 @@ router.post('/logout', withAuth, (req, res) => {
 
 // PUT /api/users/1 -- update an existing user
 router.put('/:id', withAuth, (req, res) => {
-    // update method
-    // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+    // update method to expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   
     // if req.body has exact key/value pairs to match the model, 
     // you can just use `req.body` instead of calling out each property,
